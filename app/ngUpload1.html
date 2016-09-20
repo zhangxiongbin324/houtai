@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../bower_components/jquery/dist/jquery.js"></script>
+		<script src="../bower_components/angular/angular.js"></script>
+		<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="../bower_components/summernote/dist/summernote.css" />
+		<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="../bower_components/summernote/dist/summernote.js"></script>
+		<script>
+			var files = []
+			var setFiles = function(element) {
+				files = [];
+				for(var i = 0; i < element.files.length; i++) {
+					files.push(element.files[i]);
+				}
+			}
+
+			angular.module("a", []).controller("b", function($scope, $http) {
+				$scope.updata = {}
+				$scope.updata.img = ""
+				$scope.save = function() {
+
+					console.log($(".abc").summernote("code"))
+					$scope.updata.content = $(".abc").summernote("code")
+
+					$http({
+						url: "http://123.56.227.177:2503/xiang-info",
+						method: "post",
+						data: $scope.updata
+					}).success(function() {
+
+					})
+				}
+
+				$scope.params = {
+					"subdir": "images",
+					"comments": "",
+					"uniqueFilename": true
+				};
+				$scope.uploadFiles = function() {
+					var fd = new FormData()
+					for(var i in files) {
+						fd.append("uploadedFile", files[i])
+					}
+					$http({
+						url: 'http://123.56.227.177:2503/xiang-upload',
+						method: "POST",
+						headers: {
+							'Content-Type': undefined
+						},
+						transformRequest: angular.identity,
+						params: $scope.params,
+						data: fd
+					}).success(function(e) {
+						console.log(e)
+						$scope.updata.img = e[0].filename
+					})
+				}
+			})
+		</script>
+	</head>
+
+	<body ng-app="a">
+		<div ng-controller="b">
+			<div>
+				<div class="form-group">
+					<label for="exampleInputFile">上传文件</label>
+					<input type="file" id="exampleInputFile" onchange="setFiles(this)" multiple>
+				</div>
+			</div>
+			<button type="button" ng-click="uploadFiles()">Submit</button> 标题：
+			<input type="text" ng-model="updata.title"><br> 时间：
+			<input type="text" ng-model="updata.date"><br> 阅读量：
+			<input type="text" ng-model="updata.readnum"> 分类：
+			<input ng-model="updata.classify" type="text"> 是否再首页显示：
+			<input ng-model="updata.toindex" type="text"> 详情： <textarea class="abc" name="" id="" cols="10" rows="100"></textarea>
+			<button ng-click="save()">save</button>
+			<script>
+				$(".abc").summernote()
+			</script>
+
+		</div>
+	</body>
+
+</html>

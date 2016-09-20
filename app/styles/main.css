@@ -1,83 +1,213 @@
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+.m_header {
+	width: 100%;
+	height: 100px;
+	background: #3E414A;
+	line-height: 100px;
 }
 
-body {
-  padding: 0;
+.m_header div {
+	padding-left: 50px;
+	font-weight: normal;
+	font-size: 45px;
+	text-shadow: 2px 2px 5px #C6C6C6;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+.dahezi {
+	width: 100%;
+	display: inline-block;
+	background: rgb(52, 55, 64);
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+.zuo {
+	width: 200px;
+	min-height: 600px;
+	float: left;
+	color: #C6C6C6;
+	font-size: 30px;
+	background: rgba(100, 100, 100, 0.5);
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.zuo span {
+	display: block;
+	width: 200px;
+	height: 60px;
+	padding-left: 20px;
+	cursor: pointer;
+	line-height: 60px;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
+#mr {
+	background: rgb(52, 55, 64);
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+.you {
+	float: left;
+	padding-left: 5%;
+	width: 80%;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
+.youshang {
+	width: 85%;
+	height: 80px;
+	line-height: 80px;
+	font-size: 30px;
+	color: #c6c6c6;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+.biaoti {
+	height: 50px;
+	background: rgba(128, 128, 128, 0.5);
+	border-radius: 3px;
+	box-shadow: 0 1px 10px #080808;
+	margin-bottom: 5px;
+}
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+.biaoti span {
+	float: left;
+	text-align: center;
+	line-height: 50px;
+}
+
+.biaoti span:first-child {
+	display: block;
+	width: 30%;
+}
+
+.biaoti span:nth-child(2) {
+	display: block;
+	width: 40%;
+}
+
+.biaoti span:nth-child(3) {
+	display: block;
+	width: 15%;
+}
+
+.biaoti span:last-child {
+	display: block;
+	width: 15%;
+}
+
+.beijing{
+	background: rgba(128, 128, 128, 0.1);
+	border-radius: 3px;
+}
+
+.fabiao {
+	height: 50px;
+	color: #fff;
+}
+
+.tt {
+	float: left;
+	width: 40%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.cc {
+	float: left;
+	width: 30%;
+	line-height: 50px;
+	text-align: center;
+}
+
+.mm,
+.dd {
+	float: left;
+	width: 15%;
+	height: 50px;
+	text-align: center;
+	padding-top: 15px;
+	
+}
+.tijiao,
+.shangchuan {
+	float: left;
+	width: 15%;
+	height: 50px;
+	text-align: center;
+}
+.tijiao button,
+.shangchuan button {
+	width: 80px;
+	height: 30px;
+	font-size: 16px;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+	line-height: 30px;
+	background: rgba(128, 128, 128, 0.8);
+}
+
+.mm button,
+.dd button,
+.dianji button {
+	width: 80px;
+	height: 30px;
+	font-size: 16px;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+	line-height: 30px;
+	background: rgba(128, 128, 128, 0.8);
+}
+
+.dianji {
+	height: 50px;
+	padding-left: 10px;
+	line-height: 50px;
+}
+
+.fabiao1 {
+	width: 50%;
+	color: #fff;
+	position: fixed;
+	border:1px solid #333333;
+	height:200px;
+	top: 50px;
+	
+}
+
+.tt1{
+	float: left;
+	width: 80%;
+	height: 50px;
+	margin-top: 2px;
+}
+.cc1,
+.mm1 {
+	float: left;
+	width: 23.3%;
+	height: 50px;
+}
+
+.mm1 input,
+.tt1 input,
+.cc1 input {
+	width: 90%;
+	height: 30px;
+	border: 0;
+	background: rgba(128, 128, 128, 0.3);
+	border-radius: 5px;
+	padding-left: 5px;
+	font-size: 16px;
+}
+
+.tk {
+	position: absolute;
+	height: 150px;
+	width: 250px;
+	background: #FFFFFF;
+	left: 600px;
+	top: 300px;
+	opacity: 0.8;
+	text-align: center;
+	line-height: 150px;
+	border-radius: 20px;
+}
+.tk button{
+	height: 30px;
+	line-height: 0;
 }
