@@ -1,0 +1,92 @@
+		.add{
+    		width:100%;
+    		height:45px;
+    		color:#114263;
+    		font-size:18px;
+    	}
+    	.nav{
+    		width:100%;
+    		height:45px;
+    	}
+    	.nav li{
+    		width:25%;
+    		height:45px;
+    		float:left;
+    		color:#114263;
+    		font-size:18px;
+    		line-height:45px;
+    		background:#E1E1E1;
+    		list-style:none;
+    		text-align: center;
+    		border-bottom:1px solid #D3D3D3;
+    	}
+    	.title{
+    		width:25%;
+    		height:45px;
+    		float:left;
+    		text-align: center;
+    		line-height:45px;
+    		border-bottom: 1px solid #ccc;
+    	}
+    	.summery{
+    		width:23%;
+    		height:45px;
+    		float:left;
+    		color:#6C6B6A;
+    		text-align: center;
+    		line-height:45px;
+    		border-bottom: 1px solid #ccc;
+    	}
+    	.content{
+    		width:36%;
+    		height:45px;
+    		color:#6C6B6A;
+    		float:left;
+    		text-align: center;
+    		line-height:45px;
+    		border-bottom: 1px solid #ccc;
+    	}
+    	.change{
+    		width:16%;
+    		height:45px;
+    		float:left;
+    		border-bottom: 1px solid #ccc;
+    		color: #333;
+    		font-family: "微软雅黑";
+    	}
+    	.del,.edit{
+    		height:25px;
+    		border-radius: 5px;
+    		background-repeat:repeat-x;
+    		margin-top:10px;
+    		color: #333;
+    	}
+    	.tit,.sum,.con{
+    		width:50%;
+    		height:35px;
+    		color:#114263;
+    		border-radius:5%;
+    		border-bottom:1px solid #C9E7FF;
+    	}
+    	.isshow{
+    		text-align:center;
+    	}
+    	.isshow p{
+    		color:#114263;
+    	}
+    	.save,.sub{
+    		width:90px;
+    		height:35px;
+    	}
+    	.div p{
+    		color: #fff;
+    	}
+		.title_t{
+			color:#fff;
+		}
+		.content_t{
+			color:#fff;
+		}
+		.summary_t{
+			color:#fff;
+		}

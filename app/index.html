@@ -15,6 +15,7 @@
 		<!-- endbuild -->
 		<!-- build:css(.tmp) styles/main.css -->
 		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/page.css">
 		<!-- endbuild -->
 	</head>
 
@@ -25,10 +26,10 @@
 		</div>
 		<div class="dahezi">
 			<div class="zuo">
-				<span id="mr">JING-EX</span>
+				<span id="mr" ui-sref="main">JING-EX</span>
 				<span>JING-IMG</span>
 				<span>JING-EXEC</span>
-				<span>JING-NEW</span>
+				<span id="junp" ui-sref="page">JING-NEW</span>
 			</div>
 			<div class="you">
 				<div class="youshang">PROPERTIES</div>
@@ -49,12 +50,14 @@
 		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 		<script src="bower_components/summernote/dist/summernote.js"></script>
+		<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 		<!-- endbower -->
 		<!-- endbuild -->
 
 		<!-- build:js({.tmp,app}) scripts/scripts.js -->
 		<script src="scripts/app.js"></script>
 		<script src="scripts/controllers/main.js"></script>
+		<script src="scripts/controllers/page.js"></script>
 		<!-- endbuild -->
 
 	</body>
