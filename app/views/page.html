@@ -22,7 +22,7 @@
 	  				<p class="summary_t">Summary:</p>
 	  					<input type="text" ng-model="s.summary" class="sum">
 	   				<p class="content_t">Content:</p>
-	   					<textarea ng-bind-html="" class="abc" ng-model="s.content" cols="30" rows="10"></textarea>
+	   					<textarea ng-bind-html="s.content" class="abc" ng-model="s.content" cols="30" rows="10"></textarea>
 				
 					<button ng-click="save()" class="save">save</button>
 	   				<button ng-click="addsave()" class="sub">submit</button>
