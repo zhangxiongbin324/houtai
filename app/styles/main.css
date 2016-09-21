@@ -1,3 +1,7 @@
+
+.mr {
+	background: rgb(52, 55, 64);
+}
 .m_header {
 	width: 100%;
 	height: 100px;
@@ -5,12 +9,11 @@
 	line-height: 100px;
 }
 
-.m_header #blink{
+.m_header div {
 	padding-left: 50px;
 	font-weight: normal;
 	font-size: 45px;
 	text-shadow: 2px 2px 5px #C6C6C6;
-	float:left;
 }
 
 .dahezi {
@@ -37,12 +40,13 @@
 	line-height: 60px;
 }
 
-.mr {
+#mr {
 	background: rgb(52, 55, 64);
 }
 
 .you {
 	float: left;
+	padding-left: 5%;
 	width: 80%;
 }
 
@@ -52,7 +56,6 @@
 	line-height: 80px;
 	font-size: 30px;
 	color: #c6c6c6;
-	float: right;
 }
 
 .biaoti {
@@ -154,16 +157,7 @@
 	line-height: 30px;
 	background: rgba(128, 128, 128, 0.8);
 }
-.tupian{
-	width: 80px;
-	height: 30px;
-	font-size: 16px;
-	border-radius: 3px;
-	border: none;
-	cursor: pointer;
-	line-height: 30px;
-	background: rgba(128, 128, 128, 0.8);
-}
+
 .dianji {
 	height: 50px;
 	padding-left: 10px;
@@ -174,14 +168,13 @@
 	width: 50%;
 	color: #fff;
 	position: fixed;
-	min-height:400px;
-	top: 20%;
-	background:#555555;
-	padding:20px;
-	display: block;
+	border:1px solid #333333;
+	height:200px;
+	top: 50px;
+	
 }
 
-/*.tt1{
+.tt1{
 	float: left;
 	width: 80%;
 	height: 50px;
@@ -191,11 +184,9 @@
 .mm1 {
 	float: left;
 	width: 23.3%;
-	height: 200px;
+	height: 50px;
 }
-textarea{
-	height: 200px;
-}
+
 .mm1 input,
 .tt1 input,
 .cc1 input {
@@ -206,16 +197,8 @@ textarea{
 	border-radius: 5px;
 	padding-left: 5px;
 	font-size: 16px;
-}*/
-.tt1{
-	width: 90%;
-	height: 30px;
-	border: 0;
-	background: rgba(128, 128, 128, 0.3);
-	border-radius: 5px;
-	padding-left: 5px;
-	font-size: 16px;
 }
+
 .tk {
 	position: absolute;
 	height: 150px;
