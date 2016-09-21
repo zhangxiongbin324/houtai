@@ -9,6 +9,7 @@
  */
 angular.module('App')
 	.controller('page',function($scope, $http){
+		$scope.s={}
 	  var server="http://123.56.227.177:2503";
             $http({
                 method:"GET",
@@ -50,6 +51,9 @@ angular.module('App')
             } 
             $scope.tj=function(){
             	$scope.f=true
+            }
+            $scope.yc=function(){
+            	$scope.f=false;
             }
 		})
 

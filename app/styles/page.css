@@ -61,18 +61,13 @@
     		margin-top:10px;
     		color: #333;
     	}
-    	.tit,.sum,.con{
+    	.tit,.sum{
     		width:50%;
     		height:35px;
     		color:#114263;
+    		border: none;
     		border-radius:5%;
-    		border-bottom:1px solid #C9E7FF;
-    	}
-    	.isshow{
-    		text-align:center;
-    	}
-    	.isshow p{
-    		color:#114263;
+    		border:1px solid #CCCCCC;
     	}
     	.save,.sub{
     		width:90px;
@@ -81,12 +76,17 @@
     	.div p{
     		color: #fff;
     	}
-		.title_t{
-			color:#fff;
+		.title_t,.content_t,.summary_t{
+			color:#333;
 		}
-		.content_t{
-			color:#fff;
-		}
-		.summary_t{
-			color:#fff;
-		}
+.show{
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	background: #fff;
+}
+.yc{
+	position: absolute;
+	top: 0;
+	right: 0;
+}

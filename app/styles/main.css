@@ -5,11 +5,12 @@
 	line-height: 100px;
 }
 
-.m_header div {
+.m_header #blink{
 	padding-left: 50px;
 	font-weight: normal;
 	font-size: 45px;
 	text-shadow: 2px 2px 5px #C6C6C6;
+	float:left;
 }
 
 .dahezi {
@@ -36,13 +37,12 @@
 	line-height: 60px;
 }
 
-#mr {
+.mr {
 	background: rgb(52, 55, 64);
 }
 
 .you {
 	float: left;
-	padding-left: 5%;
 	width: 80%;
 }
 
@@ -52,6 +52,7 @@
 	line-height: 80px;
 	font-size: 30px;
 	color: #c6c6c6;
+	float: right;
 }
 
 .biaoti {

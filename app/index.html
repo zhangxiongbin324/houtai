@@ -20,29 +20,23 @@
 	</head>
 
 	<body ng-app="App">
-
+	<div>
 		<div class="m_header">
 			<div id="blink">炫 耀</div>
+			<div class="youshang">PROPERTIES</div>
 		</div>
 		<div class="dahezi">
 			<div class="zuo">
-				<span id="mr" ui-sref="main">JING-EX</span>
+				<span ng-click="dj()" ui-sref="main" ui-sref-active="mr">JING-EX</span>
 				<span>JING-IMG</span>
 				<span>JING-EXEC</span>
-				<span id="junp" ui-sref="page">JING-NEW</span>
+				<span ng-click="dj()" ui-sref="page" ui-sref-active="mr">JING-NEW</span>
 			</div>
-			<div class="you">
-				<div class="youshang">PROPERTIES</div>
-				<div class="biaoti">
-					<span>id</span>
-					<span>TITLE</span>
-					<span>MODIFY</span>
-					<span>DELETE</span>
-				</div>
-				<div ui-view></div>
+			<div class="you">										
+					<div ui-view></div>
 			</div>
 		</div>
-
+	</div>
 		<!-- build:js(.) scripts/vendor.js -->
 		<!-- bower:js -->
 		<script src="bower_components/jquery/dist/jquery.js"></script>

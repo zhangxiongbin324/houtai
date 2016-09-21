@@ -1,11 +1,11 @@
 
 		<div id="content">
-				<ul class="nav">
-					<li>Title</li>
-					<li>Summary</li>
-					<li>Content</li>
-					<li>Delete</li>
-				</ul>
+					<ul class="nav">
+						<li>Title</li>
+						<li>Summary</li>
+						<li>Content</li>
+						<li>Delete</li>
+					</ul>
 				<div ng-repeat="x in data" class="div">
 					<p class="title">{{x.title}}</p>
 					<p class="summery">{{x.summary}}</p>
@@ -16,7 +16,7 @@
 					</p>
 				</div>
 				<input type="button" value="添加" ng-click='tj()' />
-				<div ng-show="f">
+				<div ng-show="f" class="show">
 					<p class="title_t">Title:</p>
 	  					<input type="text" ng-model="s.title" class="tit">
 	  				<p class="summary_t">Summary:</p>
@@ -26,10 +26,10 @@
 				
 					<button ng-click="save()" class="save">save</button>
 	   				<button ng-click="addsave()" class="sub">submit</button>
+	   				<button ng-click="yc()" class="yc">X</button>
 	   			</div>
 			</div>
 			
-
 			<script>
 				$(".abc").summernote()
 			</script>

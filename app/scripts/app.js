@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-	.module('App', ["ui.router"]).config(function($stateProvider, $urlRouterProvider) {
+	.module('App',["ui.router",'ngSanitize']).config(function($stateProvider, $urlRouterProvider) {
 		$stateProvider.state("main", {
 			url: "/main",
 			templateUrl: "views/main.html",
@@ -19,5 +19,6 @@ angular
 			templateUrl: "views/page.html",
 			controller: "page"
 		})
+		
 		$urlRouterProvider.when('', '/main');
-	});
+	})
