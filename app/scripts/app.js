@@ -14,6 +14,10 @@ angular
 			url: "/main",
 			templateUrl: "views/main.html",
 			controller: "main"
+		}).state("page", {
+			url: "/pagen",
+			templateUrl: "views/page.html",
+			controller: "page"
 		})
 		$urlRouterProvider.when('', '/main');
 	});

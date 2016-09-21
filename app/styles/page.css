@@ -1,0 +1,93 @@
+		.add{
+    		width:100%;
+    		height:45px;
+    		color:#114263;
+    		font-size:18px;
+    	}
+    	.nav{
+    		width:100%;
+    		height: 50px;
+			background: rgba(128, 128, 128, 0.5);
+			border-radius: 3px;
+			box-shadow: 0 1px 10px #080808;
+			margin-bottom: 5px;
+    	}
+    	.nav li{
+    		width:25%;
+    		height:45px;
+    		float:left;
+    		font-size:18px;
+    		line-height:45px;
+    		list-style:none;
+    		text-align: center;
+    	}
+    	.title{
+    		width:25%;
+    		height:45px;
+    		float:left;
+    		text-align: center;
+    		line-height:45px;
+    		border-bottom: 1px solid #ccc;
+    	}
+    	.summery{
+    		width:23%;
+    		height:45px;
+    		float:left;
+    		color:#6C6B6A;
+    		text-align: center;
+    		line-height:45px;
+    		border-bottom: 1px solid #ccc;
+    	}
+    	.content{
+    		width:36%;
+    		height:45px;
+    		color:#6C6B6A;
+    		float:left;
+    		text-align: center;
+    		line-height:45px;
+    		border-bottom: 1px solid #ccc;
+    	}
+    	.change{
+    		width:16%;
+    		height:45px;
+    		float:left;
+    		border-bottom: 1px solid #ccc;
+    		color: #333;
+    		font-family: "微软雅黑";
+    	}
+    	.del,.edit{
+    		height:25px;
+    		border-radius: 5px;
+    		background-repeat:repeat-x;
+    		margin-top:10px;
+    		color: #333;
+    	}
+    	.tit,.sum{
+    		width:50%;
+    		height:35px;
+    		color:#114263;
+    		border: none;
+    		border-radius:5%;
+    		border:1px solid #CCCCCC;
+    	}
+    	.save,.sub{
+    		width:90px;
+    		height:35px;
+    	}
+    	.div p{
+    		color: #fff;
+    	}
+		.title_t,.content_t,.summary_t{
+			color:#333;
+		}
+.show{
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	background: #fff;
+}
+.yc{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
