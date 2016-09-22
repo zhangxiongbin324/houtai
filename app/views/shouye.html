@@ -1,0 +1,21 @@
+<div class="g_biaoti">
+	<span>TITLE</span>
+	<span>CONTENT</span>
+	<span>MODIFY</span>
+	<span>DELETE</span>
+</div>
+<div ng-controller="shouye" class="g_angular">
+	<div ng-repeat="t in data" class="g_fabiao">
+		<div class="g_tt">{{t.title}}</div>
+		<div class="g_cc">{{t.content}}</div>
+		<div class="g_mm"><button ng-click="Edit(t)">Modity</button></div>
+		<div class="g_dd"><button ng-click="Del(t)">Delete</button></div>
+	</div>
+	<div class="g_dianji"><button ng-click="Add()">+Add</button></div>
+	<div ng-show="isshow" class="g_fabiao1">
+		<div class="g_tt1"><input type="text" placeholder="title" ng-model="c.title"></div>
+		<div class="g_cc1"><input type="text" placeholder="content" ng-model="c.content"></div>
+		<div class="g_mm"><button ng-click="Required()">Alter</button></div>
+		<div class="g_dd"><button ng-click="AddRequired()">Submit</button></div>
+	</div>
+</div>

@@ -16,6 +16,7 @@
 		<!-- build:css(.tmp) styles/main.css -->
 		<link rel="stylesheet" href="styles/main.css">
 		<link rel="stylesheet" href="styles/page.css">
+		<link rel="stylesheet" href="styles/shouye.css" />
 		<!-- endbuild -->
 	</head>
 
@@ -26,7 +27,7 @@
 		</div>
 		<div class="dahezi">
 			<div class="zuo">
-				<span>JING-EX</span>
+				<span ng-click="dj()" ui-sref="shouye" ui-sref-active="mr">JING-EX</span>
 				<span>JING-IMG</span>
 				<span ng-click="dj()" ui-sref="main" ui-sref-active="mr">JING-EXEC</span>
 				<span ng-click="dj()" ui-sref="page" ui-sref-active="mr">JING-NEW</span>
@@ -52,6 +53,7 @@
 		<script src="scripts/app.js"></script>
 		<script src="scripts/controllers/main.js"></script>
 		<script src="scripts/controllers/page.js"></script>
+		<script src="scripts/controllers/shouye.js"></script>
 		<!-- endbuild -->
 
 	</body>
