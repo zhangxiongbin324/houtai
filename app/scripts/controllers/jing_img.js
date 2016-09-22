@@ -7,12 +7,7 @@
  * # MainCtrl
  * Controller of the App
  */
-			function shanshuo() {
-				var color = "#F0F0F0 | #C0C0C0 | #E4E4E4";
-				color = color.split(" | ");
-				document.getElementById('blink').style.color = color[parseInt(Math.random() * color.length)]
-			}
-			setInterval("shanshuo()", 500)
+
 var server = "http://123.56.227.177:2503"
 var files = []
 var setFiles = function(element) {
@@ -22,14 +17,14 @@ var setFiles = function(element) {
 	}
 };
 angular.module('App')
-    .controller('main', function($scope, $http) {
+    .controller('jing_img', function($scope, $http) {
 	$scope.updata = {}
 	$scope.updata.img = ""
 	$scope.AddRequired = function() {
-		console.log($(".cc1").summernote("code"))
-		$scope.updata.content = $(".cc1").summernote("code")
+//		console.log($(".cc1").summernote("code"))
+//		$scope.updata.content = $(".cc1").summernote("code")
 		$http({
-			url: server + "/jing-exec/",
+			url: server + "/jing-img/",
 			method: "post",
 			data: $scope.updata
 		}).success(function() {
@@ -58,7 +53,6 @@ angular.module('App')
 			data: fd
 		}).success(function(a) {
 			console.log(a),
-			
 			$scope.updata.img = a[0].filename
 		})
 
@@ -70,22 +64,20 @@ angular.module('App')
 	}
 	$http({
 		method: "GET",
-		url: server + "/jing-exec/"
+		url: server + "/jing-img/"
 	}).success(function(e) {
 		$scope.data = e
 	})
 	$scope.Edit = function(e) {
 		$scope.isshow = true;
 		$scope.updata = e;
-		var content=$scope.updata.content;
-        $('.cc1').summernote('code',content)
+//		var content=$scope.updata.content;
+//      $('.cc1').summernote('code',content)
 	}
 	$scope.Required = function() {
-		$scope.updata.content =$(".cc1").summernote("code");
-
 					$http({
 						method: "PUT",
-						url: server + "/jing-exec/" + $scope.updata.id,
+						url: server + "/jing-img/" + $scope.updata.id,
 						data: $scope.updata
 					}).success(function() {
 						$scope.isshow = false;
@@ -100,7 +92,7 @@ angular.module('App')
 		$scope.fuc = function() {
 			$http({
 				method: "DELETE",
-				url: server + "/jing-exec/" + e.id
+				url: server + "/jing-img/" + e.id
 			}).success(function() {
 				$scope.data.splice($scope.data.indexOf(e), 1)
 			})
