@@ -1,6 +1,6 @@
 <div class="biaoti">
 					<span>id</span>
-					<span>TITLE</span>
+					<span>IMG</span>
 					<span>MODIFY</span>
 					<span>DELETE</span>
 				</div>
@@ -10,24 +10,26 @@
 </div>
 <div class="beijing">
 	<div ng-repeat="t in data" class="fabiao">
-		<div class="cc">{{t.img}}</div>
-		<div class="tt">{{t.title}}</div>
+		<div class="cc">{{t.id}}</div>
+		<div class="tt">{{t.img}}</div>
+		
 		<div class="mm"><button ng-click="Edit(t)">修改</button></div>
 		<div class="dd"><button ng-click="Del(t)">删除</button></div>
 
 	</div>
 	<div class="dianji"><button ng-click="Add()">添加</button></div>
 	<div ng-show="isshow" class="fabiao1">
+		<!--<div ng-repeat="t in data">
+		<img ng-src='http://123.56.227.177/bi/public/jing_upload/images/{{ t.img }}' />
+		</div>-->
 		<div>
 				<div class="form-group">
 					<label for="exampleInputFile">上传文件</label>
 					<input type="file" id="exampleInputFile" onchange="setFiles(this)" multiple>
 				</div>
 			</div>
-			<button type="button" class="tupian" ng-click="uploadFiles()">提交图片</button><br /><br />
-
-		标题：<input class="tt1"type="text" placeholder="title" ng-model="updata.title"><br />
-		 详情：<textarea class="cc1" name="" id="" cols="30" rows="10" ></textarea>
+			<button type="button" class="tupian" ng-click="uploadFiles()">上传图片</button><br /><br />
+			<div class="tupian1"><img ng-src='http://123.56.227.177/bi/public/jing_upload/images/{{updata.img}}' alt="图片"/></div>
 		<div class="tijiao"><button ng-click="Required()">修改</button></div>
 		<div class="shangchuan"><button ng-click="AddRequired()">提交</button></div>
 		<div class="shangchuan"><button ng-click="qxiao()">取消</button></div>
@@ -35,7 +37,4 @@
 		
 	</div>
 </div>
-<script>
-	$(".cc1").summernote()
-	
-</script>
+

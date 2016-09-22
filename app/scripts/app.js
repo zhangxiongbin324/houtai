@@ -18,6 +18,10 @@ angular
 			url: "/pagen",
 			templateUrl: "views/page.html",
 			controller: "page"
+		}).state("jing_img", {
+			url: "/jing_img",
+			templateUrl: "views/jing_img.html",
+			controller: "jing_img"
 		})
 		$urlRouterProvider.when('', '/main');
 	});
