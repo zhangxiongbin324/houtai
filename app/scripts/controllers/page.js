@@ -20,6 +20,8 @@ angular.module('App')
             $scope.edit=function(e){
                 $scope.f=true
                 $scope.s=e
+                var content=$scope.s.content;
+     		   	$('.abc').summernote('code',content)
             }
             $scope.save=function(){          	
                 $http({
