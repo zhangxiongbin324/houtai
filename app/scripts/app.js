@@ -15,9 +15,13 @@ angular
 			templateUrl: "views/main.html",
 			controller: "main"
 		}).state("page", {
-			url: "/page",
+			url: "/pagen",
 			templateUrl: "views/page.html",
 			controller: "page"
+		}).state("shouye", {
+			url: "/shouye",
+			templateUrl: "views/shouye.html",
+			controller: "shouye"
 		})
 		
 		$urlRouterProvider.when('', '/main');
