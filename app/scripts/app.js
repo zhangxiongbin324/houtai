@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-	.module('App', ["ui.router"]).config(function($stateProvider, $urlRouterProvider) {
+	.module('App',["ui.router"]).config(function($stateProvider, $urlRouterProvider) {
 		$stateProvider.state("main", {
 			url: "/main",
 			templateUrl: "views/main.html",
@@ -23,5 +23,6 @@ angular
 			templateUrl: "views/jing_img.html",
 			controller: "jing_img"
 		})
+		
 		$urlRouterProvider.when('', '/main');
-	});
+	})

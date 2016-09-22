@@ -7,10 +7,8 @@
  * # MainCtrl
  * Controller of the App
  */
-
 angular.module('App')
 	.controller('page',function($scope, $http){
-		
 		$scope.s={}
 	  var server="http://123.56.227.177:2503";
             $http({
@@ -57,7 +55,6 @@ angular.module('App')
             $scope.yc=function(){
             	$scope.f=false;
             }
-            
 		})
 
 	
