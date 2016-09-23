@@ -23,13 +23,14 @@ angular.module('App')
                 var content=$scope.s.content;
      		   	$('.abc').summernote('code',content)
             }
-            $scope.save=function(){          	
+            $scope.save=function(){  
+            	$scope.s.content =$(".abc").summernote("code");
                 $http({
                     method:"PUT",
                     url:server+"/jing-new/"+$scope.s.id,
                     data:$scope.s
                 }).success(function(){
-                	
+                	$scope.f = false;
                 })
             }
             $scope.addsave=function(){

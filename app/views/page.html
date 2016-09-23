@@ -9,7 +9,7 @@
 				<div ng-repeat="x in data" class="div">
 					<p class="title">{{x.title}}</p>
 					<p class="summery">{{x.summary}}</p>
-					<p class="content">{{x.content}}</p>
+					<p class="content">{{x.content|f}}</p>
 					<p class="change">
 						<button ng-click="edit(x)" class="edit">编辑</button>
 						<button ng-click="del(x)" class="del">删除</button>
