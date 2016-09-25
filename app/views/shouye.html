@@ -1,21 +1,42 @@
-<div class="g_biaoti">
-	<span>TITLE</span>
-	<span>CONTENT</span>
-	<span>MODIFY</span>
-	<span>DELETE</span>
-</div>
-<div ng-controller="shouye" class="g_angular">
-	<div ng-repeat="t in data" class="g_fabiao">
-		<div class="g_tt">{{t.title}}</div>
-		<div class="g_cc">{{t.content}}</div>
-		<div class="g_mm"><button ng-click="Edit(t)">Modity</button></div>
-		<div class="g_dd"><button ng-click="Del(t)">Delete</button></div>
-	</div>
-	<div class="g_dianji"><button ng-click="Add()">+Add</button></div>
-	<div ng-show="isshow" class="g_fabiao1">
-		<div class="g_tt1"><input type="text" placeholder="title" ng-model="c.title"></div>
-		<div class="g_cc1"><input type="text" placeholder="content" ng-model="c.content"></div>
-		<div class="g_mm"><button ng-click="Required()">Alter</button></div>
-		<div class="g_dd"><button ng-click="AddRequired()">Submit</button></div>
-	</div>
-</div>
+
+		<div id="content">
+					<ul class="nav">
+						<li>Title</li>
+						<li>Img</li>
+						<li>Content</li>
+						<li>Delete</li>
+					</ul>
+				<div ng-repeat="x in data" class="div">
+					<p class="title">{{x.title}}</p>
+					<p class="summery">{{x.summary}}</p>
+					<p class="content">{{x.content|f}}</p>
+					<p class="change">
+						<button ng-click="edit(x)" class="edit">编辑</button>
+						<button ng-click="del(x)" class="del">删除</button>
+					</p>
+				</div>
+				<input type="button" value="添加" ng-click='tj()' />
+				<div ng-show="f" class="show">
+				<form role="form">
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Title</label>
+				    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Title" ng-model="s.title" class="tit">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Summary</label>
+				    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Summary" ng-model="s.summary" class="sum">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Content</label>
+				    <textarea class="abc" cols="30" rows="10"></textarea>
+				  </div>
+				  <button type="submit" class="btn btn-default" ng-click="save()">Save</button>
+				  <button type="submit" class="btn btn-default" ng-click="addsave()">Submit</button>
+	   				<button type="button" class="close" ng-click="yc()"><span aria-hidden="true"class="yc">&times;</span><span class="sr-only">Close</span></button>	   			
+	   				
+	   			</div>
+			</div>
+			
+			<script>
+				$(".abc").summernote()
+			</script>
